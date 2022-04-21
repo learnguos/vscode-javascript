@@ -1,9 +1,5 @@
-# Change Log
+## 版本记录
 
-All notable changes to the "vscode-cms-snippet" extension will be documented in this file.
+- v1.0.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+  > javascript代码片段
