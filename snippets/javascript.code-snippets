@@ -1,0 +1,169 @@
+{
+  // 变量
+  "定义全局变量": {
+    "prefix": ["var", "变量"],
+    "body": ["var $1 = $0"]
+  },
+  "定义局部变量let": {
+    "prefix": ["let", "变量"],
+    "body": ["let $1 = $0"]
+  },
+  "定义局部变量const": {
+    "prefix": ["const", "变量"],
+    "body": ["const $1 = $0"]
+  },
+
+  // 输出
+  "输出信息": {
+    "prefix": ["log", "控制台-输出"],
+    "body": ["console.log($0)", ""]
+  },
+  "输出错误信息": {
+    "prefix": ["error", "控制台-输出"],
+    "body": ["console.error($0)", ""]
+  },
+  "输出警告信息": {
+    "prefix": ["warn", "控制台-输出"],
+    "body": ["console.warn($0)", ""]
+  },
+
+  // 简单数据类型
+  "数字型": {
+    "prefix": ["数据类型-简单数据类型-数字型", "number"],
+    "body": ["number"]
+  },
+  "布尔型": {
+    "prefix": ["数据类型-简单数据类型-布尔型", "boolean"],
+    "body": ["boolean"]
+  },
+  "字符串型": {
+    "prefix": ["数据类型-简单数据类型-字符串型", "string"],
+    "body": ["string"]
+  },
+  "未定义型": {
+    "prefix": ["数据类型-简单数据类型-未定义型", "undefined"],
+    "body": ["undefined"]
+  },
+  "空值型": {
+    "prefix": ["数据类型-简单数据类型-空值型", "null"],
+    "body": ["null"]
+  },
+
+  // 判断语句
+  "if语句": {
+    "prefix": ["if", "判断语句"],
+    "body": ["if ($0) {", "", "}"]
+  },
+  "双重if语句": {
+    "prefix": ["ifelse", "判断语句"],
+    "body": ["if ($0) {", "  ", "} else {", "  ", "}"]
+  },
+  "三元表达式": {
+    "prefix": ["ife", "三元表达式", "判断语句"],
+    "body": ["$1 ? $2 : $3"]
+  },
+  "多重if语句": {
+    "prefix": ["ifif", "判断语句"],
+    "body": ["if ($0) {", "  ", "} if () {", "  ", "}"]
+  },
+
+  // 模块相关
+  "模块导入": {
+    "prefix": ["import", "模块导入"],
+    "body": ["import {$0} from '@$1'"]
+  },
+  "定义模块": {
+    "prefix": ["export", "模块定义"],
+    "body": ["export const $1 = () => {", "  $0", "}"]
+  },
+
+  /* s 常用方法 */
+  "判断数据类型": {
+    "prefix": ["判断数据类型", "typeof"],
+    "body": ["typeof "]
+  },
+  "获取字符长度 / 获取数组长度": {
+    "prefix": ["获取字符长度", "获取数组长度", ".length"],
+    "body": [".length"]
+  },
+  "判断非数字类型": {
+    "prefix": ["判断非数字类型", "isNaN($0)"],
+    "body": ["isNaN($0)"]
+  },
+  // 数据类型转换
+  "转换数据类型为字符串型": {
+    "prefix": ["转换数据类型为字符串型", "String()"],
+    "body": ["String($0)"]
+  },
+  "转换数据类型为数字型": {
+    "prefix": ["转换数据类型为数字型", "Number()"],
+    "body": ["Number($0)"]
+  },
+  "转换数据类型为布尔型": {
+    "prefix": ["转换数据类型为布尔型", "Boolean()"],
+    "body": ["Boolean($0)"]
+  },
+  // 数字操作
+  "获取数字的绝对值": {
+    "prefix": ["获取-数字的绝对值", "Math.abs()"],
+    "body": ["Math.abs($0)"]
+  },
+  "忽略小数点": {
+    "prefix": ["获取-数字的整数", "Math.floor()"],
+    "body": ["Math.floor($0)"]
+  },
+  "忽略小数点、整数进1": {
+    "prefix": ["获取-数字的整数", "Math.ceil()"],
+    "body": ["Math.ceil($0)"]
+  },
+  "忽略小数点、整数四舍五入": {
+    "prefix": ["获取-数字的整数", "Math.round()"],
+    "body": ["Math.round($0)"]
+  },
+  "随机小数": {
+    "prefix": ["生成-数字的15位随机小数", "Math.random()"],
+    "body": ["Math.random($0)"]
+  },
+  "随机整数": {
+    "prefix": ["生成-数字的1位随机整数", "Math.floor(Math.random() * 10)"],
+    "body": ["Math.random($0)"]
+  },
+  // 时间操作
+  "获取当前日期": {
+    "prefix": ["获取当前日期", "date", "时间"],
+    "body": ["new Date()"]
+  },
+  "获取当前的年份": {
+    "prefix": ["获取当前的年份", "date", "时间"],
+    "body": ["new Date().getFullYear()"]
+  },
+  "获取当前的月份": {
+    "prefix": ["获取当前的年份", "date", "时间"],
+    "body": ["new Date().getMonth() + 1"]
+  },
+  "获取当前月份的号数": {
+    "prefix": ["获取当前月份的号数", "date", "时间"],
+    "body": ["new Date().getDate() + 1"]
+  },
+  "获取当前的星期": {
+    "prefix": ["获取当前的星期", "date", "时间"],
+    "body": ["new Date().getDay()"]
+  },
+  "获取当前分钟的秒数": {
+    "prefix": ["获取当前分钟的秒数", "date", "时间"],
+    "body": ["new Date().getSeconds()"]
+  },
+  "获取当前分钟": {
+    "prefix": ["获取当前的分钟", "date", "时间"],
+    "body": ["new Date().getMinutes()"]
+  },
+  "获取当前小时": {
+    "prefix": ["获取当前小时", "date", "时间"],
+    "body": ["new Date().getHours()"]
+  },
+  "获取当前日期总毫秒、时间从1970年1月1日0时开始算": {
+    "prefix": ["获取当前日期总毫秒", "date", "时间"],
+    "body": ["+new Date()"]
+  }
+  /* e 常用方法 */
+}

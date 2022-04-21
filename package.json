@@ -1,0 +1,40 @@
+{
+  "name": "vscode-javascript",
+  "displayName": "vscode-javascript",
+  "description": "javascript代码片段",
+  "version": "1.0.0",
+  "publisher": "learnguo",
+  "keywords": [
+    "javscript"
+  ],
+  "repository": {
+    "url": "https://github.com/GuoLearn/vscode-javascript"
+  },
+  "icon": "vscode-javascript.png",
+  "engines": {
+    "vscode": "^1.27.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/javascript.code-snippets"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/javascript.code-snippets"
+      }
+    ]
+  }
+}
