@@ -1,24 +1,21 @@
 ## 说明
 
-- 一个  `vscode` 的 `javascript` 代码片段插件
+- 一个 `vscode` 的 `javascript` 代码片段插件
 - 或者说是一个学习 `javascript` 的插件，覆盖了基本的 `javascript` 语法。
-- 涵盖了 `es5 + es6`语法
+- 涵盖了 `es5 + es6` 语法
 - 由于 `IE浏览器`的退出，就不标注是否为 `es6语法`了，插件使用的 `es6` 知识点已经可以被主流浏览器支持。
 - 有兼容性要求的请自行去 `MDN` 查找
 - 对英文不好的人来说很友好。
 
-
 - 支持的页面：`vue`、`javascript`
-
-
 
 ## 使用教程
 
 #### 变量
 
-- 呼出关键字：`var`  `变量`
+- 呼出关键字：`var` `变量`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -27,9 +24,9 @@
         ]
     ```
 
-- 呼出关键字：`let`  `变量`
+- 呼出关键字：`let` `变量`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -39,9 +36,9 @@
         ]
     ```
 
-- 呼出关键字：`const`  `变量`
+- 呼出关键字：`const` `变量`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -51,13 +48,11 @@
         ]
     ```
 
-
-
 #### 输出
 
-- 呼出关键字：`log`  `输出`
+- 呼出关键字：`log` `输出`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["console.log($0)"]
@@ -65,35 +60,33 @@
 
 - 呼出关键字：`error` `输出`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["console.error($0)"]
     ```
 
-- 呼出关键字：`warn`  `输出`
+- 呼出关键字：`warn` `输出`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["console.warn($0)"]
     ```
 
-- 呼出关键字：`dir`  `输出`
+- 呼出关键字：`dir` `输出`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["console.dir($0)"]
     ```
 
-
-
 #### 判断
 
-- 呼出关键字：`if判断语句`  `判断`
+- 呼出关键字：`if判断语句` `判断`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["if ($0) {", "", "}"]
@@ -101,35 +94,33 @@
 
 - 呼出关键字：`ifelse双重判断语句` ` `判断`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["if ($0) {", "  ", "} else {", "  ", "}"]
     ```
 
-- 呼出关键字：`ife三元表达式`   `判断`
+- 呼出关键字：`ife三元表达式` `判断`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["$1 ? $2 : $3"]
     ```
 
-- 呼出关键字：`ifif多重判断语句`  `判断`
+- 呼出关键字：`ifif多重判断语句` `判断`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["if ($0) {", "  ", "} else if () {", "  ", "} else {", "  ", "}"]
     ```
 
-
-
 #### 循环
 
-- 呼出关键字：`for循环`  `循环`
+- 呼出关键字：`for循环` `循环`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["for (let i = 0; i < ${1:变量或数字}; i++) {", "  $0", "}"]
@@ -137,7 +128,7 @@
 
 - 呼出关键字：`while循环` `循环`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -148,9 +139,9 @@
         ]
     ```
 
-- 呼出关键字：`do while循环`  `循环`
+- 呼出关键字：`do while循环` `循环`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -161,9 +152,9 @@
         ]
     ```
 
-- 呼出关键字：`break关键字停止循环`  `循环`
+- 呼出关键字：`break关键字停止循环` `循环`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -172,9 +163,9 @@
         ]
     ```
 
-- 呼出关键字：`continue关键字停止循环`  `循环`
+- 呼出关键字：`continue关键字停止循环` `循环`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -183,15 +174,13 @@
         ]
     ```
 
-
-
 #### 函数
 
-- **使用构造函数new Function()创建函数**
+- **使用构造函数 new Function()创建函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -226,7 +215,7 @@
 
   - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["(function () {", "", "})()"]
@@ -234,9 +223,9 @@
 
 - **创建构造函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -252,9 +241,9 @@
 
 - **创建回调函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -270,9 +259,9 @@
 
 - **创建闭包函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -289,9 +278,9 @@
 
 - **创建递归函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -307,9 +296,9 @@
 
 - **创建箭头函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -323,9 +312,9 @@
 
 - **创建匿名函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -338,9 +327,9 @@
 
 - **创建普通函数**
 
-  - 呼出关键字：`function`  `函数`
+  - 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -358,11 +347,11 @@
         ]
     ```
 
-- **函数体中return关键字的作用**
+- **函数体中 return 关键字的作用**
 
-- 呼出关键字：`function`  `函数`
+- 呼出关键字：`function` `函数`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -380,15 +369,13 @@
         ]
     ```
 
-
-
 #### 对象
 
-- **defineProperty方法**
+- **defineProperty 方法**
 
-  - 呼出关键字：`object`  `对象`
+  - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -405,7 +392,7 @@
 
   - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": "delete ${1:对象}.${0:要删除的属性名}"
@@ -413,9 +400,9 @@
 
 - **解构赋值获取指定的对象属性并保存为变量**
 
-  - 呼出关键字：`object`  `对象`
+  - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -426,9 +413,9 @@
 
 - **字面量创建对象**
 
-  - 呼出关键字：`object`  `对象`
+  - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -448,11 +435,11 @@
         ]
     ```
 
-- **构造函数new Object创建对象**
+- **构造函数 new Object 创建对象**
 
-  - 呼出关键字：`object`  `对象`
+  - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -465,9 +452,9 @@
 
 - **自定义构造函数创建对象**
 
-  - 呼出关键字：`object`  `对象`
+  - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -504,9 +491,9 @@
 
 - **面向对象**
 
-  - 呼出关键字：`object`  `对象`
+  - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -551,9 +538,9 @@
 
 - **遍历对象**
 
-  - 呼出关键字：`object`  `对象`
+  - 呼出关键字：`object` `对象`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -563,15 +550,13 @@
         ]
     ```
 
-
-
 #### 数组
 
 - **获取数组中最小的数字成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.min.apply(Math, ${0:数组})"]
@@ -581,7 +566,7 @@
 
   - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.max.apply(Math, ${0:数组})"]
@@ -589,9 +574,9 @@
 
 - **解构赋值将数组的成员提取出来，并设置变量名。**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -601,9 +586,9 @@
 
 - **在数组尾部新增一个成员或多个成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["// 返回结果为新数组成员的数量", "${1:数组}.push(${0:元素})"]
@@ -611,9 +596,9 @@
 
 - **根据数组索引获取成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:数组}[${0:成员索引}]"]
@@ -621,9 +606,9 @@
 
 - **在数组头部新增一个元素或多个元素**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -634,9 +619,9 @@
 
 - **删除数组最后一个成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["// 返回结果为删除的元素", "${1:数组}.pop()"]
@@ -644,9 +629,9 @@
 
 - **删除数组第一个成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["// 返回结果为删除的元素", "${1:数组}.shift()"]
@@ -654,9 +639,9 @@
 
 - **根据成员索引截取数组成员或多个数组成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -667,9 +652,9 @@
 
 - **倒转数组成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:数组}.reverse()"]
@@ -677,9 +662,9 @@
 
 - **数组的数字成员冒泡排序**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -690,11 +675,11 @@
         ]
     ```
 
-- **数组去重for循环实现**
+- **数组去重 for 循环实现**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -708,11 +693,11 @@
         ]
     ```
 
-- **数组去重forEach循环实现**
+- **数组去重 forEach 循环实现**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -728,9 +713,9 @@
 
 - **根据数值匹配相同的数组第一位成员**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -739,21 +724,21 @@
         ]
     ```
 
-- **遍历数组for循环**
+- **遍历数组 for 循环**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["for (let i = 0; i < ${1:数组}.length; i++) {", "  $0", "}"]
     ```
 
-- **遍历数组forEach方法**
+- **遍历数组 forEach 方法**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -767,9 +752,9 @@
 
 - **遍历数组筛选符合条件的成员到新数组**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -783,9 +768,9 @@
 
 - **遍历数组查找符合条件的数组成员是否存在**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -797,11 +782,11 @@
         ]
     ```
 
-- **遍历数组map方法**
+- **遍历数组 map 方法**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -813,19 +798,19 @@
 
 - **定义数组**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["[元素1,元素2,元素3,元素4]"]
     ```
 
-- **遍历数组find方法获取第一个符合条件的数组元素**
+- **遍历数组 find 方法获取第一个符合条件的数组元素**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -837,11 +822,11 @@
         ]
     ```
 
-- **根据成员判断数组是否有该成员，成功返回true，失败返回false**
+- **根据成员判断数组是否有该成员，成功返回 true，失败返回 false**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:数组}.includes(${0:要查找的数组成员})"]
@@ -849,9 +834,9 @@
 
 - **使用扩展运算符合并数组**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["let ${1:新数组名} = [...${2:新数组名},...${0:新数组名}]"]
@@ -859,23 +844,21 @@
 
 - **获取数组长度**
 
-  - 呼出关键字：`array`  `数组`
+  - 呼出关键字：`array` `数组`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["数组.length"]
     ```
 
-
-
 #### 字符
 
 - **获取字符长度**
 
-  - 呼出关键字：`string`  `字符`
+  - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["字符串.length"]
@@ -885,7 +868,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串} = ${1:字符串}.trim()"]
@@ -895,7 +878,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -908,17 +891,17 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串}.charAt(${0:字符索引})"]
     ```
 
-- **根据字符索引的字符获取字符的ASCII码值**
+- **根据字符索引的字符获取字符的 ASCII 码值**
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串}.charCodeAt(${0:字符索引})"]
@@ -928,7 +911,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -941,7 +924,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串} = ${2:字符串}.concat('${0:要新增的字符}')"]
@@ -951,7 +934,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -963,7 +946,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -977,7 +960,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串} = ${2:字符串}.toLowerCase()"]
@@ -987,7 +970,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串} = ${2:字符串}.toUpperCase()"]
@@ -997,7 +980,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -1010,7 +993,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["// `字符字符${变量}字符字符${变量2}字符字符${函数名()}}`"]
@@ -1020,7 +1003,7 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串}.startsWith('${0:字符}')"]
@@ -1030,31 +1013,29 @@
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:字符串}.endsWith('${0:字符}')"]
     ```
 
-- **根据字符复制n次字符并返回字符串**
+- **根据字符复制 n 次字符并返回字符串**
 
   - 呼出关键字：`string` `字符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["const $1 = '${2:字符}'.repeat(${0:复制的次数})"]
     ```
 
-
-
 #### 数字
 
 - **Math.ceil()方法返回大于或等于给定浮点数的最小整数**
 
-  - 呼出关键字：`math`  `数字`
+  - 呼出关键字：`math` `数字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.ceil({0:浮点数})"]
@@ -1062,9 +1043,9 @@
 
 - **获取绝对值**
 
-  - 呼出关键字：`math`  `数字`
+  - 呼出关键字：`math` `数字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.abs(${1:数字})"]
@@ -1072,19 +1053,19 @@
 
 - **根据有小数点的数字获取忽略小数的数字**
 
-  - 呼出关键字：`math`  `数字`
+  - 呼出关键字：`math` `数字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.floor(${1:有小数的数字})"]
     ```
 
-- **根据有小数点的数字获取忽略小数个位数进1的数字**
+- **根据有小数点的数字获取忽略小数个位数进 1 的数字**
 
-  - 呼出关键字：`math`  `数字`
+  - 呼出关键字：`math` `数字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.ceil(${1:有1位小数的数字})"]
@@ -1092,43 +1073,41 @@
 
 - **根据有小数的数字获取第一位小数四舍五入后的数字**
 
-  - 呼出关键字：`math`  `数字`
+  - 呼出关键字：`math` `数字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.round(${1:有1位小数的数字})"]
     ```
 
-- **随机生成有15位小数的数字**
+- **随机生成有 15 位小数的数字**
 
-  - 呼出关键字：`math`  `数字`
+  - 呼出关键字：`math` `数字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.random()"]
     ```
 
-- **随机生成1位整数**
+- **随机生成 1 位整数**
 
-  - 呼出关键字：`math`  `数字`
+  - 呼出关键字：`math` `数字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Math.floor(Math.random() * 10)"]
     ```
 
-
-
 #### 日期
 
 - **获取当前日期**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date()"]
@@ -1136,9 +1115,9 @@
 
 - **获取当前的年份**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date().getFullYear()"]
@@ -1146,9 +1125,9 @@
 
 - **获取当前的月份**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date().getFullYear()"]
@@ -1156,9 +1135,9 @@
 
 - **获取当前月份的号数**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date().getDate() + 1"]
@@ -1166,9 +1145,9 @@
 
 - **获取当前的星期**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date().getDay()"]
@@ -1176,9 +1155,9 @@
 
 - **获取当前分钟的秒数**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date().getSeconds()"]
@@ -1186,9 +1165,9 @@
 
 - **获取当前的分钟**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date().getMinutes()"]
@@ -1196,33 +1175,31 @@
 
 - **获取当前小时**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["new Date().getHours()"]
     ```
 
-- **获取当前日期总毫秒、时间从1970年1月1日0时开始算**
+- **获取当前日期总毫秒、时间从 1970 年 1 月 1 日 0 时开始算**
 
-  - 呼出关键字：`date`  `日期`
+  - 呼出关键字：`date` `日期`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["+new Date()"]
     ```
 
-
-
 #### set
 
-- **定义set对象**
+- **定义 set 对象**
 
-  - 呼出关键字：`set` 
+  - 呼出关键字：`set`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1231,21 +1208,21 @@
         ]
     ```
 
-- **根据元素向ste后面新增元素(重复的元素不会添加进来)**
+- **根据元素向 ste 后面新增元素(重复的元素不会添加进来)**
 
-  - 呼出关键字：`set` 
+  - 呼出关键字：`set`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:set数据}.add(${2:要新增的元素1).add(${0:要新增的元素2)"]
     ```
 
-- **根据元素删除set对象的元素**
+- **根据元素删除 set 对象的元素**
 
-  - 呼出关键字：`set` 
+  - 呼出关键字：`set`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1254,11 +1231,11 @@
         ]
     ```
 
-- **根据元素判断set数据是否有这个元素**
+- **根据元素判断 set 数据是否有这个元素**
 
-  - 呼出关键字：`set` 
+  - 呼出关键字：`set`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1267,21 +1244,21 @@
         ]
     ```
 
-- **清空set数据**
+- **清空 set 数据**
 
-  - 呼出关键字：`set` 
+  - 呼出关键字：`set`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:set数据}.clear()"]
     ```
 
-- **遍历set数据**
+- **遍历 set 数据**
 
-  - 呼出关键字：`set` 
+  - 呼出关键字：`set`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1292,15 +1269,13 @@
         ]
     ```
 
-
-
 #### 操作符
 
 - **扩展运算符**
 
-  - 呼出关键字：`operator`  `操作符`
+  - 呼出关键字：`operator` `操作符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1311,9 +1286,9 @@
 
 - **算数运算符**
 
-  - 呼出关键字：`operator`  `操作符`
+  - 呼出关键字：`operator` `操作符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1325,9 +1300,9 @@
 
 - **递增与递减运算符**
 
-  - 呼出关键字：`operator`  `操作符`
+  - 呼出关键字：`operator` `操作符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1338,9 +1313,9 @@
 
 - **比较运算符**
 
-  - 呼出关键字：`operator`  `操作符`
+  - 呼出关键字：`operator` `操作符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1352,9 +1327,9 @@
 
 - **逻辑运算符**
 
-  - 呼出关键字：`operator`  `操作符`
+  - 呼出关键字：`operator` `操作符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1368,9 +1343,9 @@
 
 - **运算符优先级**
 
-  - 呼出关键字：`operator`  `操作符`
+  - 呼出关键字：`operator` `操作符`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1384,15 +1359,13 @@
         ]
     ```
 
-
-
 #### 正则
 
 - **text()方法匹配正则**
 
-  - 呼出关键字：`regex`  `正则`
+  - 呼出关键字：`regex` `正则`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1403,9 +1376,9 @@
 
 - **exec()方法匹配正则**
 
-  - 呼出关键字：`regex`  `正则`
+  - 呼出关键字：`regex` `正则`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1414,15 +1387,13 @@
         ]
     ```
 
-
-
 #### 数据类型
 
 - **简单数据类型**
 
-  - 呼出关键字： `dt` `数据类型`  
+  - 呼出关键字： `dt` `数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1440,9 +1411,9 @@
 
 - **复杂数据类型**
 
-  - 呼出关键字： `dt` `数据类型`  
+  - 呼出关键字： `dt` `数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1455,15 +1426,13 @@
         ]
     ```
 
-
-
 #### 转换数据类型
 
 - **对象转数组(提取属性值转化为数组成员)**
 
-  - 呼出关键字： `cdt` `转换数据类型`  
+  - 呼出关键字： `cdt` `转换数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:对象} = Object.keys(${0:对象})"]
@@ -1471,9 +1440,9 @@
 
 - **数组类型转换为字符串型**
 
-  - 呼出关键字： `cdt` `转换数据类型`  
+  - 呼出关键字： `cdt` `转换数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1484,9 +1453,9 @@
 
 - **字符串型转换为数组类型**
 
-  - 呼出关键字： `cdt` `转换数据类型`  
+  - 呼出关键字： `cdt` `转换数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1497,9 +1466,9 @@
 
 - **简单数据类型转换为字符串型**
 
-  - 呼出关键字： `cdt` `转换数据类型`  
+  - 呼出关键字： `cdt` `转换数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["String($0)"]
@@ -1507,9 +1476,9 @@
 
 - **简单数据类型转换为数字型**
 
-  - 呼出关键字： `cdt` `转换数据类型`  
+  - 呼出关键字： `cdt` `转换数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Number($0)"]
@@ -1517,9 +1486,9 @@
 
 - **简单数据类型转换为布尔型**
 
-  - 呼出关键字： `cdt` `转换数据类型`  
+  - 呼出关键字： `cdt` `转换数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Boolean($0)"]
@@ -1527,9 +1496,9 @@
 
 - **将类似数组的对象类型转换为数组类型**
 
-  - 呼出关键字： `cdt` `转换数据类型`  
+  - 呼出关键字： `cdt` `转换数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1545,15 +1514,13 @@
         ]
     ```
 
-
-
 #### 识别数据类型
 
-- **typeof关键字识别数据类型**
+- **typeof 关键字识别数据类型**
 
-  - 呼出关键字： `idt` `识别数据类型`  
+  - 呼出关键字： `idt` `识别数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1564,9 +1531,9 @@
 
 - **检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上**
 
-  - 呼出关键字： `idt` `识别数据类型`  
+  - 呼出关键字： `idt` `识别数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1580,9 +1547,9 @@
 
 - **判断是否为非数字类型**
 
-  - 呼出关键字： `idt` `识别数据类型`  
+  - 呼出关键字： `idt` `识别数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["isNaN(${0:数据})"]
@@ -1590,9 +1557,9 @@
 
 - **判断是否为对象类型方法**
 
-  - 呼出关键字： `idt` `识别数据类型`  
+  - 呼出关键字： `idt` `识别数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["$0 instanceof Object"]
@@ -1600,9 +1567,9 @@
 
 - **判断是否为数组类型方法一**
 
-  - 呼出关键字： `idt` `识别数据类型`  
+  - 呼出关键字： `idt` `识别数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["$0 instanceof Array"]
@@ -1610,23 +1577,21 @@
 
 - **判断是否为数组类型方法二**
 
-  - 呼出关键字： `idt` `识别数据类型`  
+  - 呼出关键字： `idt` `识别数据类型`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["Array.isArray($0)"]
     ```
 
+#### this 关键字
 
+- **this 关键字**
 
-#### this关键字
+  - 呼出关键字： `this关键字`
 
-- **this关键字**
-
-  - 呼出关键字：  `this关键字`  
-
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1640,11 +1605,11 @@
         ]
     ```
 
-- **改变this指向call方法**
+- **改变 this 指向 call 方法**
 
-  - 呼出关键字：  `this关键字`  
+  - 呼出关键字： `this关键字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1653,11 +1618,11 @@
         ]
     ```
 
-- **改变this指向bind方法**
+- **改变 this 指向 bind 方法**
 
-  - 呼出关键字：  `this关键字`  
+  - 呼出关键字： `this关键字`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1665,15 +1630,13 @@
         ]
     ```
 
-
-
 #### 复制数据
 
 - **复制简单数据类型与复制复杂数据类型的区别**
 
-  - 呼出关键字：  `复制数据`  
+  - 呼出关键字： `复制数据`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1698,9 +1661,9 @@
 
 - **浅拷贝**
 
-  - 呼出关键字：  `复制数据`  
+  - 呼出关键字： `复制数据`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1731,9 +1694,9 @@
 
 - **深拷贝**
 
-  - 呼出关键字：  `复制数据`  
+  - 呼出关键字： `复制数据`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1776,15 +1739,13 @@
         ]
     ```
 
-
-
 #### 定时器
 
 - **执行一次的定时器**
 
-  - 呼出关键字：  `timer`   `定时器`
+  - 呼出关键字： `timer` `定时器`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["  let dd = setTimeout(function () {", "  ", "  }, ${0:毫秒数})"]
@@ -1792,9 +1753,9 @@
 
 - **停止定时器**
 
-  - 呼出关键字：  `timer`   `定时器`
+  - 呼出关键字： `timer` `定时器`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["clearTimeout(${0:定时器的变量})"]
@@ -1802,23 +1763,21 @@
 
 - **无限循环执行的定时器**
 
-  - 呼出关键字：  `timer`   `定时器`
+  - 呼出关键字： `timer` `定时器`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["  let dd = setInterval(function () {", "  ", "  }, ${0:毫秒数})"]
     ```
 
-
-
 #### 本地存储
 
 - **窗口生命周期~存储数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1828,9 +1787,9 @@
 
 - **窗口生命周期~获取数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["window.sessionStorage.getItem('${0:已存储数据的名称}')"]
@@ -1838,9 +1797,9 @@
 
 - **窗口生命周期~删除数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["window.sessionStorage.removeItem(${0:已存储数据的名称})"]
@@ -1848,9 +1807,9 @@
 
 - **窗口生命周期~删除所有数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["window.sessionStorage.clear()"]
@@ -1858,9 +1817,9 @@
 
 - **永久生命周期~存储数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -1870,9 +1829,9 @@
 
 - **永久生命周期~获取数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["window.localStorage.getItem('${0:已存储数据的名称}')"]
@@ -1880,9 +1839,9 @@
 
 - **永久生命周期~删除数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["window.localStorage.removeItem(${0:已存储数据的名称})"]
@@ -1890,9 +1849,9 @@
 
 - **永久生命周期~删除全部数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["window.localStorage.clear()"]
@@ -1900,9 +1859,9 @@
 
 - **转化要存储的复杂数据类型的数据**
 
-  - 呼出关键字：  `le`   `本地存储`
+  - 呼出关键字： `le` `本地存储`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1911,15 +1870,13 @@
         ]
     ```
 
-
-
 #### 模块
 
-- **模块介绍与script标签中的模块**
+- **模块介绍与 script 标签中的模块**
 
-  - 呼出关键字：  `module`   `模块`
+  - 呼出关键字： `module` `模块`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1945,9 +1902,9 @@
 
 - **模块导入**
 
-  - 呼出关键字：  `module`   `模块`
+  - 呼出关键字： `module` `模块`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1962,9 +1919,9 @@
 
 - **定义导出的模块**
 
-  - 呼出关键字：  `module`   `模块`
+  - 呼出关键字： `module` `模块`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -1976,9 +1933,9 @@
 
 - **默认导出**
 
-  - 呼出关键字：  `module`   `模块`
+  - 呼出关键字： `module` `模块`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -1989,15 +1946,13 @@
         ]
     ```
 
-
-
-#### javascript代码运行机制
+#### javascript 代码运行机制
 
 - **1.变量预解析**
 
-  - 呼出关键字：  `代码执行步骤`  
+  - 呼出关键字： `代码执行步骤`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2013,9 +1968,9 @@
 
 - **1.匿名函数预解析**
 
-  - 呼出关键字：  `代码执行步骤`  
+  - 呼出关键字： `代码执行步骤`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2031,9 +1986,9 @@
 
 - **2.作用域**
 
-  - 呼出关键字：  `代码执行步骤`  
+  - 呼出关键字： `代码执行步骤`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2050,9 +2005,9 @@
 
 - **3.异步编程**
 
-  - 呼出关键字：  `代码执行步骤`  
+  - 呼出关键字： `代码执行步骤`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2069,15 +2024,13 @@
         ]
     ```
 
+#### DOM 文档对象模型
 
+- **DOM 介绍**
 
-#### DOM文档对象模型
+  - 呼出关键字： `DOM介绍`
 
-- **DOM介绍**
-
-  - 呼出关键字：  `DOM介绍`  
-
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2099,15 +2052,13 @@
         ]
     ```
 
+#### DOM 文档对象模型-获取元素
 
+- **根据 id 获取元素**
 
-#### DOM文档对象模型-获取元素
+  - 呼出关键字： `ge` `获取元素`
 
-- **根据id获取元素**
-
-  - 呼出关键字：  `ge`   `获取元素`
-
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["  var $1 = document.getElementById('${0:id名}')"]
@@ -2115,9 +2066,9 @@
 
 - **根据标签名获取元素(获取到是一个数组)**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["  var $1 = document.getElementsByTagName('${0:标签名}')"]
@@ -2125,9 +2076,9 @@
 
 - **获取标签内的标签**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2138,9 +2089,9 @@
 
 - **根据标签名或类名获取元素(获取到的变量是一个数组)**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["var $1 = document.querySelectorAll('${0:类名要加.或标签名}')"]
@@ -2148,9 +2099,9 @@
 
 - **根据类名获取元素(获取到的变量是一个数组)**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2160,9 +2111,9 @@
 
 - **节点操作~根据获取到的元素获取父级元素**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${0:获取到的元素}.parentNode"]
@@ -2170,9 +2121,9 @@
 
 - **节点操作~根据获取到的元素获取子代元素(获取到的变量是一个数组)**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${0:获取到的元素}.childNodes"]
@@ -2180,43 +2131,41 @@
 
 - **节点操作~根据获取到的元素获取兄弟元素**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${0:获取到的元素}.nextElementSibling"]
     ```
 
-- **获取body标签**
+- **获取 body 标签**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["var $1 = document.body"]
     ```
 
-- **获取html标签**
+- **获取 html 标签**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["var $1 = document.documentElement;"]
     ```
 
-
-
-#### DOM文档对象模型-生成元素
+#### DOM 文档对象模型-生成元素
 
 - **根据获取到的元素向这个元素内生成元素(推荐性能最高)**
 
-  - 呼出关键字：  `ge`   `获取元素`
+  - 呼出关键字： `ge` `获取元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2231,9 +2180,9 @@
 
 - **节点操作~在页面生成虚拟元素(根据获取到的元素向这个元素内最下面添加虚拟元素)**
 
-  - 呼出关键字：  `ga`   `生成元素`
+  - 呼出关键字： `ga` `生成元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -2246,9 +2195,9 @@
 
 - **节点操作~在页面生成虚拟元素(根据获取到的元素向这个元素内最上面添加虚拟元素)**
 
-  - 呼出关键字：  `ga`   `生成元素`
+  - 呼出关键字： `ga` `生成元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2259,29 +2208,25 @@
         ]
     ```
 
-
-
-#### DOM文档对象模型-删除元素
+#### DOM 文档对象模型-删除元素
 
 - **节点操作~根据获取到的元素删除子元素**
 
-  - 呼出关键字：  `re`   `删除元素`
+  - 呼出关键字： `re` `删除元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素}.removeChild(${1:获取到的元素}.children[0])"]
     ```
 
-
-
-#### DOM文档对象模型-复制元素
+#### DOM 文档对象模型-复制元素
 
 - **节点操作~根据获取到的元素轻度复制元素(只复制标签不复制里面的内容)**
 
-  - 呼出关键字：  `cte`   `删除元素`
+  - 呼出关键字： `cte` `删除元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${0:获取到的元素}.cloneNode()"]
@@ -2289,23 +2234,21 @@
 
 - **节点操作~根据获取到的元素深度复制元素(复制标签和标签里面的内容)**
 
-  - 呼出关键字：  `cte`   `删除元素`
+  - 呼出关键字： `cte` `删除元素`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${0:获取到的元素}.cloneNode(true)"]
     ```
 
-
-
-#### DOM文档对象模型-事件
+#### DOM 文档对象模型-事件
 
 - **什么是事件**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2338,9 +2281,9 @@
 
 - **事件对象常用的属性或方法(函数)**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2358,9 +2301,9 @@
 
 - **解除元素已绑定的事件**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2370,9 +2313,9 @@
 
 - **鼠标滚动事件或滚动条滑动事件**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -2384,9 +2327,9 @@
 
 - **鼠标点击元素事件**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2398,9 +2341,9 @@
 
 - **鼠标经过元素事件**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2412,9 +2355,9 @@
 
 - **鼠标离开元素事件**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2426,9 +2369,9 @@
 
 - **鼠标在元素内移动事件(每移动一个像素点都会触发)**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2440,9 +2383,9 @@
 
 - **表单元素获得焦点时触发**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2454,9 +2397,9 @@
 
 - **表单元素失去焦点时触发**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2468,9 +2411,9 @@
 
 - **表单元素提交时触发**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2482,9 +2425,9 @@
 
 - **表单元素重置时触发**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2496,9 +2439,9 @@
 
 - **表单元素失去焦点并且元素内容发生改变时触发此事件**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2510,9 +2453,9 @@
 
 - **表单元素发生改变时触发**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2524,9 +2467,9 @@
 
 - **鼠标在弹起时触发**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2538,9 +2481,9 @@
 
 - **鼠标在按下时触发**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2552,9 +2495,9 @@
 
 - **鼠标在右键呼出菜单事件~禁止鼠标右键呼出菜单**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2567,9 +2510,9 @@
 
 - **鼠标选中元素内容(相当于按下鼠标左键)~禁止选中**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -2582,9 +2525,9 @@
 
 - **按下键盘时触发~不区分字母大小写**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["document.addEventListener('keydown', function (e) {", "", "})"]
@@ -2592,33 +2535,31 @@
 
 - **松开键盘时触发~不区分字母大小写**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": ["document.addEventListener('keyup', function (e) {", "", "})"]
     ```
 
-- **松开键盘时触发~区分字母大小写不识别功能键,比如左右箭头,shift等**
+- **松开键盘时触发~区分字母大小写不识别功能键,比如左右箭头,shift 等**
 
-  - 呼出关键字：  `te`   `事件`
+  - 呼出关键字： `te` `事件`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["document.addEventListener('onkeypress', function (e) {", "", "})"]
     ```
 
-
-
-#### DOM文档对象模型-获取元素属性
+#### DOM 文档对象模型-获取元素属性
 
 - **获取元素内容-保留修改内容的空格与换行**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素}.innerHTML"]
@@ -2626,9 +2567,9 @@
 
 - **获取元素内容-去除空格和换行**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.innerText"]
@@ -2636,9 +2577,9 @@
 
 - **获取元素本身自带的属性的属性值**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.${2:自带属性名}"]
@@ -2646,9 +2587,9 @@
 
 - **获取表单元素自带属性的属性值**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2656,11 +2597,11 @@
         ]
     ```
 
-- **获取元素css样式的属性值(只能获取行内样式)**
+- **获取元素 css 样式的属性值(只能获取行内样式)**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.style.${2:css属性-号换成大写}'"]
@@ -2668,9 +2609,9 @@
 
 - **获取元素类名**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.className"]
@@ -2678,9 +2619,9 @@
 
 - **获取自定义元素属性的属性值**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.getAttribute('${2:属性名}')"]
@@ -2688,9 +2629,9 @@
 
 - **获取元素的偏移量等**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2709,9 +2650,9 @@
 
 - **获取元素的边框大小等**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2728,9 +2669,9 @@
 
 - **获取元素的滚动距离等**
 
-  - 呼出关键字：  `me`   `获取元素属性`
+  - 呼出关键字： `me` `获取元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2745,15 +2686,13 @@
         ]
     ```
 
-
-
-#### DOM文档对象模型-修改元素属性
+#### DOM 文档对象模型-修改元素属性
 
 - **修改元素内容-保留修改内容的空格与换行**
 
-  - 呼出关键字：  `mea`   `修改元素属性`
+  - 呼出关键字： `mea` `修改元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.innerHTML = '${0:触发事件后修改的内容}'"]
@@ -2761,9 +2700,9 @@
 
 - **修改元素内容-去除空格和换行**
 
-  - 呼出关键字：  `mea`   `修改元素属性`
+  - 呼出关键字： `mea` `修改元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.innerText = '${0:触发事件后修改的内容}'"]
@@ -2771,9 +2710,9 @@
 
 - **修改元素元素本身自带的属性的属性值**
 
-  - 呼出关键字：  `mea`   `修改元素属性`
+  - 呼出关键字： `mea` `修改元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["${1:获取到的元素或this}.${2:自带属性名} = '${0:属性值}'"]
@@ -2781,9 +2720,9 @@
 
 - **修改表单元素自带属性的属性值**
 
-  - 呼出关键字：  `mea`   `修改元素属性`
+  - 呼出关键字： `mea` `修改元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2791,11 +2730,11 @@
         ]
     ```
 
-- **修改元素css样式的属性值(不能直接修改css样式属性值,而是添加到标签的行内样式中。)**
+- **修改元素 css 样式的属性值(不能直接修改 css 样式属性值,而是添加到标签的行内样式中。)**
 
-  - 呼出关键字：  `mea`   `修改元素属性`
+  - 呼出关键字： `mea` `修改元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2805,9 +2744,9 @@
 
 - **自定义元素属性和属性值**
 
-  - 呼出关键字：  `mea`   `修改元素属性`
+  - 呼出关键字： `mea` `修改元素属性`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2815,15 +2754,13 @@
         ]
     ```
 
+#### BOM 浏览器对象模型
 
+- **BOM 浏览器对象模型~BOM 介绍**
 
-#### BOM浏览器对象模型
+  - 呼出关键字： `bom`
 
-- **BOM浏览器对象模型~BOM介绍**
-
-  - 呼出关键字：  `bom` 
-
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2861,21 +2798,21 @@
         ]
     ```
 
-- **load窗口加载事件~只调用一次**
+- **load 窗口加载事件~只调用一次**
 
-  - 呼出关键字：  `bom` 
+  - 呼出关键字： `bom`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": ["window.addEventListener('load', function () {", "  $0", "})"]
     ```
 
-- **load窗口宽高变化事件~每一像素的变化都会触发此事件**
+- **load 窗口宽高变化事件~每一像素的变化都会触发此事件**
 
-  - 呼出关键字：  `bom` 
+  - 呼出关键字： `bom`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2885,15 +2822,13 @@
         ]
     ```
 
-
-
 #### 网络请求
 
 - **1.前置知识**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2909,11 +2844,11 @@
         ]
     ```
 
-- **网络请求~2.解读url地址**
+- **网络请求~2.解读 url 地址**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2931,19 +2866,19 @@
 
 - **3.客户端可以自定义发送的数据**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["// 1.请求参数query", "// 2.请求体body", "// 2.根据请求标头的值"]
     ```
 
-- **4.网络请求api~XMLHttpRequest**
+- **4.网络请求 api~XMLHttpRequest**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -2985,11 +2920,11 @@
         ]
     ```
 
-- **5.XMLHttpRequest设置请求超时函数(调用该函数后中断请求)**
+- **5.XMLHttpRequest 设置请求超时函数(调用该函数后中断请求)**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3001,11 +2936,11 @@
         ]
     ```
 
-- **6.XMLHttpRequest显示文件上传进度**
+- **6.XMLHttpRequest 显示文件上传进度**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3020,9 +2955,9 @@
 
 - **7.跨域**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3062,9 +2997,9 @@
 
 - **8.回调地狱**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3074,11 +3009,11 @@
         ]
     ```
 
-- **9.使用Promise对象解决回调地狱**
+- **9.使用 Promise 对象解决回调地狱**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3129,11 +3064,11 @@
         ]
     ```
 
-- **10.Promise并发处理多个异步任务，所有任务都完成后才能得到结果**
+- **10.Promise 并发处理多个异步任务，所有任务都完成后才能得到结果**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3165,11 +3100,11 @@
         ]
     ```
 
-- **11.Promise并发处理多个异步任务，只要有一个任务完成就能得到结果**
+- **11.Promise 并发处理多个异步任务，只要有一个任务完成就能得到结果**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3200,11 +3135,11 @@
         ]
     ```
 
-- **12.xhr升级版-fetch(基于Promise实现的，可以使用Promise语法)**
+- **12.xhr 升级版-fetch(基于 Promise 实现的，可以使用 Promise 语法)**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3232,11 +3167,11 @@
         ]
     ```
 
-- **13.xhr升级版-fetch设置请求超时时间或手动取消正在的网络请求**
+- **13.xhr 升级版-fetch 设置请求超时时间或手动取消正在的网络请求**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3247,11 +3182,11 @@
         ]
     ```
 
-- **14.使用async/await来简化Promise的.then操作**
+- **14.使用 async/await 来简化 Promise 的.then 操作**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -3286,11 +3221,11 @@
         ]
     ```
 
-- **15.fetch中Request对象的使用以及设置Request对象的请求头**
+- **15.fetch 中 Request 对象的使用以及设置 Request 对象的请求头**
 
-  - 呼出关键字：  `网络请求` 
+  - 呼出关键字： `网络请求`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
      "body": [
@@ -3338,25 +3273,23 @@
         ]
     ```
 
-
-
 files api
 
 - **获取本地文件大小(字节为单位)**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["获取到的文件上传表单元素.files[0].size"]
     ```
 
-- **获取本地文件的格式类型(只能识别image或text类型文件格式)**
+- **获取本地文件的格式类型(只能识别 image 或 text 类型文件格式)**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["获取到的文件上传表单元素.files[0].type"]
@@ -3364,9 +3297,9 @@ files api
 
 - **获取本地文件名(包括后缀)**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["获取到的文件上传表单元素.files[0].name"]
@@ -3374,19 +3307,19 @@ files api
 
 - **获取本地文件大小(字节为单位)**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["获取到的文件上传表单元素.files[0].name"]
     ```
 
-- **获取本地文件URL路径**
+- **获取本地文件 URL 路径**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3396,9 +3329,9 @@ files api
 
 - **获取到文件中的内容**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3420,11 +3353,11 @@ files api
         ]
     ```
 
-- **将获取到的图片或其他文件的base64格式的二进制数据**
+- **将获取到的图片或其他文件的 base64 格式的二进制数据**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3446,25 +3379,23 @@ files api
         ]
     ```
 
-- **将file转化为blob数据url**
+- **将 file 转化为 blob 数据 url**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": ["window.URL.createObjectURL(获取到的文件上传表单元素.files[0])"]
     ```
 
-
-
 #### Proxy api
 
 - **监听拦截对象属性的访问与赋值**
 
-  - 呼出关键字：`proxy`  
+  - 呼出关键字：`proxy`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
@@ -3495,9 +3426,9 @@ files api
 
 - **监听拦截调用函数时，进行监听拦截传入的实参**
 
-  - 呼出关键字：`files`  
+  - 呼出关键字：`files`
 
-  - Snipped代码
+  - Snipped 代码
 
     ```javascript
     "body": [
