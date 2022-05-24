@@ -1656,5 +1656,11 @@
       "      let proxy = new Proxy(sub, handler)",
       "      proxy(2, 1) // 输出 proxy(2, 1) 结果为9"
     ]
+  },
+
+  // try/catch语句
+  "try/catch语句": {
+    "prefix": ["try/catch语句"],
+    "body": ["// try/catch语句是用来处理可能会出错的语句上面的", "// 最典型的应用就是处理网络请求出现的错误", "// 在promise实列对象中，调用reject错误函数会有catch中的err事件接收到。", "try {", "  // 网络操作等", "  // 可以使用theow操作符主动抛出错误", "  throw \"324\";", "} catch (err) {", "  // err为错误的事件,接受throw抛出的数据或promise实列对象中，调用reject错误函数中的实参。", "  console.log(err);", "}"]
   }
 }
