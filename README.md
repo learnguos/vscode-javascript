@@ -1,12 +1,10 @@
 ## 说明
 
-- 一个 `vscode` 的 `javascript` 代码片段插件
-- 或者说是一个学习 `javascript` 的插件，覆盖了基本的 `javascript` 语法。
+- 一个 `vscode` 的 `javascript` 代码提示插件
 - 涵盖了 `es5 + es6` 语法
 - 由于 `IE浏览器`的退出，就不标注是否为 `es6语法`了，插件使用的 `es6` 知识点已经可以被主流浏览器支持。
 - 有兼容性要求的请自行去 `MDN` 查找
 - 对英文不好的人来说很友好。
-
 - 支持的页面：`vue`、`javascript`、`html`
 
 ## 使用教程
