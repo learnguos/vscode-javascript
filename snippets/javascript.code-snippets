@@ -1601,7 +1601,7 @@
     "body": [
       "// 返回元素对象：e.target",
       "// 返回事件类型：e.type",
-      "// 阻止默认行为(如阻止选中元素内容设置为selectstart事件才有效果，阻止鼠标呼出右键菜单等设置为contextmenu事件才有效果)：e.preventDefault()",
+      "// 阻止默认行为(如阻止选中元素内容设置为selectstart事件才有效果，阻止鼠标呼出右键菜单等设置为contextmenu事件才有效果,阻止鼠标点击链接地址设置为click事件才有效果)：e.preventDefault()",
       "// 获取焦点：e.focus()",
       "// 阻止冒泡：e.stopPropagation()",
       "// 鼠标与页面最左边的距离或最上边的距离：e.pageX/e.pageY",
@@ -1615,6 +1615,10 @@
     "body": [
       "${1:获取到的元素}.removeEventListener('${2:已绑定的事件名如click}', ${0:这里填写绑定事件的回调函数名})"
     ]
+  },
+  "自动触发设置的事件": {
+    "prefix": ["te~自动触发设置的事件", "事件~自动触发设置的事件"],
+    "body": ["${1:获取到的元素}.click()"]
   },
   "鼠标滚动事件或滚动条滑动事件": {
     "prefix": [
