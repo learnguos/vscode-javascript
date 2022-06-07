@@ -1988,7 +1988,8 @@
           "// 普通模块导入：import { 模块1, 模块2 as 重命名的模块2 } from '@${1:模块js文件路径}'",
           "// 导出默认模块时，建议没有其他需要设置的模块下",
           "// 默认模块导入：import 默认模块 from '@${1:模块js文件路径}'",
-          "// js文件中直接通过路径加载文件执行文件代码：import '文件路径'"
+          "// js文件中直接通过路径加载文件执行文件代码：import '文件路径'",
+          "import $1 from '@"
         ]
     ```
 
@@ -1999,10 +2000,11 @@
   - Snipped 代码
 
     ```javascript
-     "body": [
+    "body": [
           "// export关键字写在最下面",
           "// 方法1：export const 模块的变量名 = 可以是数据值可以是函数等",
-          "// 方法2：同时导出多个或一个：export { 变量1, 变量2, 变量3 }"
+          "// 方法2：同时导出多个或一个：export { 变量1, 变量2, 变量3 }",
+          "export"
         ]
     ```
 
@@ -2017,7 +2019,8 @@
           "// export关键字写在最下面",
           "// 导出这个模块本身就是foo变量的值",
           "// 方法1：const foo= 'foo'  export default foo",
-          "// 方法二(推荐)：export { foo as default, 变量2 }"
+          "// 方法二(推荐)：export { foo as default, 变量2 }",
+          "export default"
         ]
     ```
 
@@ -2417,7 +2420,12 @@
           "// 鼠标与页面最左边的距离或最上边的距离：e.pageX/e.pageY",
           "// 鼠标与body最左边的距离或最上边的距离：e.clientX/e.clientY",
           "// 鼠标与电脑屏幕最左边的距离或最上边的距离：e.screenX/e.screenY",
-          "// 获取当前按键的十进制的ASCLL码值(https://cdn.jsdelivr.net/gh/learnguos/figure-bed/ASCLL码表.jpg)(每个按键都有对应的十进制的ASCLL码值只有设置了键盘事件才有效)：e.keyCode"
+          "// 获取当前按键的十进制的ASCLL码值(https://cdn.jsdelivr.net/gh/learnguos/figure-bed/ASCLL码表.jpg)(每个按键都有对应的十进制的ASCLL码值只有设置了键盘事件才有效)：e.keyCode",
+          "",
+          "// 正在触摸屏幕的所有手指的一个列表：e.touches(设置手指触摸事件才生效)",
+          "// 正在触摸当前DOM元素上的手指的一个列表：e.targetTouches(设置手指触摸事件才生效)",
+          "// 手指状态发生了改变的列表，从无到有，从有到无变化：e.changedTouches(设置手指触摸事件才生效,这个事件对象可以获取当前手指的偏移量)",
+          "// 阻止手指触摸滑动时屏幕滑动：e.preventDefault()"
         ]
     ```
 
@@ -2429,6 +2437,7 @@
 
     ```javascript
     "body": [
+          "// 声明的事件的回调函数不需要加()号",
           "${1:获取到的元素}.removeEventListener('${2:已绑定的事件名如click}', ${0:这里填写绑定事件的回调函数名})"
         ]
     ```
@@ -2443,6 +2452,48 @@
     "body": ["${1:获取到的元素}.click()"]
     ```
   
+- **手指触摸到一个DOM元素时触发**
+
+  - 呼出关键字： `te` `事件`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": [
+          "${0:获取到的元素}.addEventListener('touchstart', function () {",
+          "  // 手指一触摸到就会触发",
+          "})"
+        ]
+    ```
+
+- **手指在一个DOM元素上滑动时触发**
+
+  - 呼出关键字： `te` `事件`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": [
+          "${0:获取到的元素}.addEventListener('touchmove', function () {",
+          "  // 手指一滑动到就会触发",
+          "})"
+        ]
+    ```
+
+- **手指从一个DOM元素上触摸了移开时触发**
+
+  - 呼出关键字： `te` `事件`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": [
+          "${0:获取到的元素}.addEventListener('touchend', function () {",
+          "  // 类属于鼠标点击了元素再松开触发",
+          "})"
+        ]
+    ```
+
 - **鼠标滚动事件或滚动条滑动事件**
 
   - 呼出关键字： `te` `事件`
