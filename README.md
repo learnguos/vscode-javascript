@@ -2,8 +2,6 @@
 
 - 一个 `vscode` 的 `javascript` 代码片段提示插件
 - 涵盖了 `es5 + es6` 语法
-- 由于 `IE浏览器`的退出，就不标注是否为 `es6语法`了，插件使用的 `es6` 知识点已经可以被主流浏览器支持。
-- 有兼容性要求的请自行去 `MDN` 查找
 - 支持的页面：`vue`、`javascript`、`html`
 
 ## 使用教程
@@ -378,7 +376,7 @@
 
 #### 对象
 
-- **defineProperty 方法**
+- **defineProperty方法处理对象属性**
 
   - 呼出关键字：`object` `对象`
 
@@ -392,6 +390,30 @@
           "  enumerable: true, // 值为false当前属性不能被遍历到,且不能被获取到默认值为true可以被遍历到和获取到",
           "  configurable: false // 值为false时，当前属性不能被删除,属性值也不能被修改",
           "})"
+        ]
+    ```
+
+- **defineProperty方法监听对象属性操作**
+
+  - 呼出关键字：`object` `对象`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": [
+          "let data = {};",
+          "Object.defineProperty(data, \"name\", {",
+          "  // 访问name属性就会执行此方法 返回值就是获取到的值",
+          "  get() {",
+          "    console.log(\"name属性被获取了\");",
+          "    return \"666\";",
+          "  },",
+          "  // 设置新值就会执行此方法 newVal就是设置的新值",
+          "  set(newVal) {",
+          "    console.log(\"name属性被设置新值了\");",
+          "    console.log(newVal);",
+          "  },",
+          "});"
         ]
     ```
 
@@ -543,7 +565,7 @@
         ]
     ```
 
-- **遍历对象**
+- **历对象方法一for循环**
 
   - 呼出关键字：`object` `对象`
 
@@ -557,7 +579,23 @@
         ]
     ```
 
+- **遍历对象方法二Object.keys()方法**
 
+  - 呼出关键字：`object` `对象`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": [
+          "Object.keys(data).forEach((key) => {",
+          "  // Object.keys(data)提取对象属性成数组  data为对象",
+          "  // 使用 forEach 方法遍历 这个数组",
+          "  // key 属性名",
+          "  // data[key] 属性值",
+          "  // data 原对象",
+          "});"
+        ]
+    ```
 
 #### 数组
 
@@ -1476,6 +1514,16 @@
 
 #### 转换数据类型
 
+- **提取对象属性名转化为数组**
+
+  - 呼出关键字： `cdt` `转换数据类型`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": ["Object.keys(${1:对象})"]
+    ```
+
 - **对象转数组(提取属性值转化为数组成员)**
 
   - 呼出关键字： `cdt` `转换数据类型`
@@ -2170,6 +2218,36 @@
 
 
 #### DOM 文档对象模型-获取元素
+
+- **获取标签属性**
+
+  - 呼出关键字： `ge` `获取元素`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": ["// .attributes属性是一个数组 为当前标签节点绑定的属性得集合,每个数组成员通过 .nodeName 属性可以获取到当前节点对象的绑定的属性名，通过.nodeValue 属性可以获取到当前节点对象的绑定的属性值", "const attrs = ${1:获取到得标签}.attributes", "attrs.forEach(function (value, index, array) {", "  // forEach 方法遍历数组", "  // value为当前成员，index为当前成员索引号，arra代表这个数组本身", "  console.log(value.nodeValue)", "  console.log(value.nodeNam)", "})"]
+    ```
+
+- **根据节点对象判断是否为标签**
+
+  - 呼出关键字： `ge` `获取元素`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": ["// nodeType为1为元素节点", "// 根据节点成员的nodeType属性可以判断当前节点是否为text节点，1则表示不是text节点。", "${1:节点对象}.nodeType"]
+    ```
+
+- **根据id获取元素内所有节点**
+
+  - 呼出关键字： `ge` `获取元素`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": ["// .childNodes方法可以获取到id为app标签内所有节点，并合并为一个数组。", "// 所有的节点都是一个对象，每个对象都有名字为app标签内的标签名与标签之间有空格的统一叫text", "const nodes = ${1:根据id获取到得元素}.childNodes"]
+    ```
 
 - **根据 id 获取元素**
 
