@@ -2289,7 +2289,10 @@
   - Snipped 代码
 
     ```javascript
-    "body": ["var $1 = document.querySelectorAll('${0:类名要加.或标签名}')"]
+       "body": [
+          "// 类名或者标签可以作为css选择器去使用",
+          "var $1 = document.querySelectorAll('${0:类名要加.或标签名}')"
+        ],
     ```
 
 - **根据类名获取元素(获取到的变量是一个数组)**
@@ -2579,7 +2582,8 @@
   - Snipped 代码
 
     ```javascript
-     "body": [
+    "body": [
+          "// 浏览器默认滚动条的document的滚动事件",
           "${0:获取到的元素}.addEventListener('scroll', function () {",
           "  // 触发事件后的操作",
           "})"
@@ -2814,6 +2818,24 @@
     "body": ["document.addEventListener('onkeypress', function (e) {", "", "})"]
     ```
 
+- **另外一个页面执行本地存储数据变化语句时触发**
+
+  - 呼出关键字： `te` `事件`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": [
+          "// 事件对象有e.key表示设置存储的名称或删除数据的名称 ",
+          "//  e.newValue 被设置的新值，如果是删除的值则为null",
+          "//  e.oldValue 数据改变前的值",
+          "// 改变数值的语句必须在另外一个页面执行，本页面设置事件才会被自动触发。",
+          "window.addEventListener('onkeypress', function (e) {",
+          "",
+          "})"
+        ]
+    ```
+
 
 
 #### DOM 文档对象模型-获取元素属性
@@ -2949,6 +2971,16 @@
         ]
     ```
 
+- **获取元素的与浏览器可视窗口顶部的距离**
+
+  - 呼出关键字： `me` `获取元素属性`
+
+  - Snipped 代码
+
+    ```javascript
+    "body": ["var divvd = ${1:获取到的元素}.getBoundingClientRect().top"]
+    ```
+
 
 
 #### DOM 文档对象模型-修改元素属性
@@ -3030,7 +3062,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": [
+        "body": [
           "// 提供与浏览器交互的方法和接口",
           "// 简单来说就是整个浏览器就是一个对象，这个对象的名字浏览器设定好了叫window，主要用来操控页面之外的部分",
           "// window是一个全局对象,js语句里面的变量、函数都会变成全局对象的一个属性和方法",
@@ -3061,7 +3093,10 @@
           "// window包含了performance这个对象，相当于window对象里面有个属性是performance,这个对象与浏览器内存占用，导航行为和时间统计的信息前端性能有关",
           "// 获取从跳转页面这一刻开始到调用这个方法的时间(页面加载完成的时间)返回的是毫秒数：window.performance.now()",
           "",
-          "// window.innerWidth查看当前的窗口宽度，window.innerHeight查看当前的窗口高度"
+          "// window.innerWidth查看当前的窗口宽度，window.innerHeight查看当前的窗口高度",
+          "",
+          "// 获取默认滚动条被卷去的上部分: window.scrollY",
+          "// 获取默认滚动条被卷去的左部分: window.scrollX"
         ]
     ```
 
