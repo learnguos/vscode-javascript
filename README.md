@@ -2510,6 +2510,19 @@
         ]
     ```
 
+- **图片加载事件**
+
+  - 呼出关键字： `te` `事件`
+
+  - Snipped 代码
+
+    ```javascript
+        "body": [
+          "// loadend事件表示无论加载失败还是成功",
+          "${1:获取到的元素}.removeEventListener('load', ${0:这里填写绑定事件的回调函数名})"
+        ]
+    ```
+
 - **解除元素已绑定的事件**
 
   - 呼出关键字： `te` `事件`
@@ -3672,6 +3685,8 @@ files api
           "// 调用readAsText方法开始异步读取文件内容 this.files[0]为提供有关文件的信息并允许网页中的 JavaScript 访问其内容",
           "  reader.readAsDataURL(this.files[0],'这里可选编码格式iso-8859-1或UTF-8也可不选')",
           "// 此时如果 reader.readyState返回1，就证明调用读取方法成功",
+          "// 为了提高用户体验可以把 可以把上传文件的表单 value 值 清空，表示已经上传成功",
+          "//  this.value;",
           "})",
           "// 当readAsDataURL方法异步读取完成后，无论成功与否都会自动触发FileReader对象的loadend事件",
           "// 设置load事件为读取完成后触发",
@@ -3679,6 +3694,8 @@ files api
           "// 此时如果 reader.readyState返回2，就证明读取文件成功完成",
           "// reader.result为读取完成的文本数据",
           "console.log(reader.result)",
+          "  // 读取完数据，也要清空下 reader内存",
+          "  reader = null;",
           "})"
         ]
     ```
