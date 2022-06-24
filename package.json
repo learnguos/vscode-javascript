@@ -2,7 +2,7 @@
   "name": "vscode-javascript",
   "displayName": "vscode-javascript",
   "description": "javascript代码片段提示插件",
-  "version": "1.21.6",
+  "version": "1.21.7",
   "publisher": "learnguo",
   "keywords": [
     "javscript"

@@ -2175,7 +2175,7 @@
   - Snipped 代码
 
     ```javascript
-    "body": [
+        "body": [
           "//  js执行机制是单线程，单线程会形成一个执行栈，(预解析后)从上往下执行。",
           "//  一般来说：完成一件需要长时间的操作，同时又不影响代码从上到下执行(同步编程)就叫异步编程",
           "//  比如定时器是异步的，网络请求资源加载也是异步的,DOM事件是异步的",
@@ -2185,7 +2185,48 @@
           "// js把异步任务又做了一次划分：宏任务：网络请求，定时器，文件读取操作等，微任务：promise.then,.catch和.finally和process.nextTick,其他微任务",
           "// 每个宏任务执行完，都会检查宏任务内是否存在待执行的微任务,如果有，则执行完所有微任务之后，再执行下一次的宏任务",
           "// 不管是在全局作用域还是局部作用域还是块级作用域，同步任务优先执行，再执行没有宏任务的微任务，再执行其他宏任务",
-          "// 作用域决定了这些任务的执行顺序和执行的范围"
+          "// 没有宏任务的微任务根据不同的微任务也有不同的执行顺序，process.nextTick(() => { console.log('1'); })这个微任务会比 .then(function () { console.log(\"9\"); }) 要先执行",
+          "// 也就是说 同步任务第一执行，没有异步任务的微任务 process.nextTick 先执行 再到 .then执行，再执行宏任务也就是异步任务，异步任务里面也可能有同步任务，异步任务等也会按照第一层级的执行顺序执行。",
+          "// 作用域决定了这些任务的执行顺序和执行的范围",
+          "// 如下面代码执行的输出顺序为 1 5 10 6 2 3 4 7 8 9",
+          "// 同步任务",
+          "console.log(\"1\");",
+          "",
+          "// 异步任务",
+          "setTimeout(function () {",
+          "  console.log(\"2\");",
+          "  new Promise(function (resolve) {",
+          "    console.log(\"3\");",
+          "    resolve();",
+          "  }).then(function () {",
+          "    console.log(\"4\");",
+          "  });",
+          "});",
+          "",
+          "// 同步任务",
+          "new Promise(function (resolve) {",
+          "  console.log(\"5\");",
+          "  resolve();",
+          "  // 没有异步任务的微任务",
+          "}).then(function () {",
+          "  console.log(\"6\");",
+          "});",
+          "",
+          "// 异步任务",
+          "setTimeout(function () {",
+          "  console.log(\"7\");",
+          "  new Promise(function (resolve) {",
+          "    console.log(\"8\");",
+          "    resolve();",
+          "  }).then(function () {",
+          "    console.log(\"9\");",
+          "  });",
+          "});",
+          "",
+          "// 没有异步任务的微任务process.nextTick()",
+          "process.nextTick(function () {",
+          "  console.log(\"10\");",
+          "});"
         ]
     ```
 
